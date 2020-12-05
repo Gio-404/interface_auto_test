@@ -1,0 +1,7 @@
+*.pyc
+*.log
+*.ini
+*.html
+.idea
+.vscode
+.pyc
