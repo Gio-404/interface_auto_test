@@ -14,11 +14,13 @@ class ReadConfig(object):
     def __init__(self):
         self.cp = configparser.ConfigParser()
         self.cp.read(file_path)
-
+    
+    '''获取环境'''
     def get_conf(self, name):
         value = self.cp.get("ENV", name)
         return value
 
+    '''获取salt'''
     def get_salt(self, name):
         value = self.cp.get("SALT", name)
         return value
